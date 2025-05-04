@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Create_account.css">
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/d4/25/36/d42536b5d37eb252bf584ae939037d67.jpg">
+    <title>Mister Donut</title>
+</head>
+<body>
+    <header class="header_index">
+        <h1 id="lin" onclick="myLink()">Mister<br>Donut</a></h1>
+        
+    </header>
+    <main>
+        <section>
+            <h1>new customers</h1>
+            <p class="firstp">Please confirm that all the information is correct. The company will not be liable if delivery information does not match.</p>
+        <form>
+            <div class="container1">
+                <h2>personal details</h2>
+                    <div class="name">
+                        <div class="Fname">
+                            <label for="fname">First Name: </label>
+                            <br>
+                            <input type="text" id="fname" name="fname" placeholder="Type first name">
+                        </div>
+                        <div class="Lname">
+                            <label for="lname">Last Name: </label>
+                            <br>
+                            <input type="text" id="lname" name="lname" placeholder="Type last name">
+                        </div>                   
+                   </div>
+                   <div class="Date">
+                        <label for="date">Date: </label>
+                        <br>
+                        <input type="datetime-local" id="date" name="date">
+                   </div>
+                   <div class="Gender">
+                        <label for="gender">Gender: </label>
+                        <br>
+                        <button type="button" id="Male" onclick="male()">Male</button>
+                        <button type="button" id="Female" onclick="female()">Female</button>
+                   </div>
+            </div>   
+            <div class="container1">
+                <h2>Billing adress</h2>
+                <div class="name">
+                    <div class="Fname">
+                        <label for="country">Country: </label>
+                        <br>
+                        <select id="country">
+                            <option></option>
+                            <option value="Philippines">Philippines</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="Korea">Korea</option>
+                            <option value="China">China</option>
+                        </select>
+                    </div>
+                    <div class="Lname">
+                        <label for="postal">Postal Code: </label>
+                        <br>
+                        <input type="text" id="postal" name="postal" placeholder="Type your postal code">
+                    </div>
+                    <div class="Fname">
+                        <label for="country">Province: </label>
+                        <br>
+                        <select id="country">
+                            <option></option>
+                            <option value="Philippines">Albay</option>
+                            <option value="Japan">Aklan</option>
+                            <option value="Turkey">IloIlo</option>
+                            <option value="Korea">Kalinga</option>
+                            <option value="China">Laguna</option>
+                        </select>
+                    </div>
+                    <div class="Lname">
+                        <label for="city">City: </label>
+                        <br>
+                        <select id="city">
+                            <option></option>
+                            <option value="Legazpi">Legazpi city</option>
+                            <option value="Quezon">Quezon city</option>
+                            <option value="Taguig">Taguig city</option>
+                        </select>
+                    </div> 
+                    <div class="name">
+                        <div class="Fname">
+                            <label for="fname">Adress 1: </label>
+                            <br>
+                            <input type="text" id="fname" name="fname" placeholder="Floor/department/building/house no./street">
+                        </div>
+                        <div class="Lname">
+                            <label for="lname">Adress 2: </label>
+                            <br>
+                            <input type="text" id="lname" name="lname" placeholder="Area/subdivision/barangay/subdivision">
+                        </div>                   
+                   </div>
+                   <div class="Number">
+                        <label for="mobile, Mobile">Mobile Number:</label>
+                        <br>
+                        <div class="number">
+                                <select id="mobile">
+                                    <option value="+63">+63</option>
+                                    <option value="+68">+68</option>
+                                    <option value="+67">+67</option>
+                                </select>
+                                <input type="text" id="Mobile"   name="mobile" placeholder="Type mobile number here (ex. 9xxxxxxxxx)">
+                        </div>
+                   </div>                  
+               </div>                
+            </div>
+            <div class="container1">
+                <h2>login details</h2>
+                <p>Please provide your email and password below. You will use this information to sign in. Sign in information is case-sensitive.</p>
+                <label for="email">Email Adress:</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="Type email adress">
+                <br>
+                <div class="Password">
+                    <div class="Pass">
+                        <label for="pass">Password: </label>
+                        <br>
+                        <input type="password" id="pass" name="pass" placeholder="Type password">
+                        <br>
+                        <p class="more">We recommend that you choose a password apart from your names, birthdays, or street addresses associated with you.</p>
+                    </div>
+                    <div class="Confirm">
+                        <label for="confirm">Confirm Password: </label>
+                        <br>
+                        <input type="password" id="confirm" name="confirm" placeholder="Type password">
+                        <br>
+                        <p class="more">We recommend that you choose a password apart from your names, birthdays, or street addresses associated with you.</p>
+                    </div>
+                </div>
+            </div> 
+            <input type ="submit" value="Register" id="register">   
+        </form>       
+        </section>
+
+    <footer>
+        <div class="outerr">
+        <div class="mister">
+            <h2>Mister Donut</h2>
+            <a href="https://www.facebook.com/MisterDonutElSalvador" target="_blank"><i class="fa fa-facebook-f" style="font-size:30px; margin:0 20px;"></i></a>
+            <a href="https://x.com/misterdonut_ph?lang=en" target="_blank"><i class="fa fa-twitter" style="font-size:30px; margin:0 10px;"></i></a>
+            <a href="https://www.instagram.com/misterdonut_ph/?hl=en" target="_blank"><i class="fa fa-instagram" style="font-size:30px; margin:0 10px;"></i></a>
+        </div>
+        <div class="outer">  
+            <div class="About">
+                <div class="first">
+                <a href="#"><p>About</p></a>
+                <a href="#"><p>Menu</p></a>
+                <a href="#"><p>Opportunity</p></a>
+                </div>
+                <div class="second">
+                <a href="#"><p>Locations</p></a>
+                <a href="#"><p>News & Events</p></a>
+                <a href="#"><p>LMS</p></a>
+                </div>
+            </div>
+            <div class="Contact">
+                <p><i class="fa fa-phone" style="font-size:24px"></i> +639178896148</p>
+                <p><i class="fa fa-envelope" style="font-size:24px"></i> fms@misterdonut.ph</p>
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+            <p>2025 all rights reserved.</p>
+            <p>privacy policy</p>
+        </div>
+    </footer>
+    <script>
+    </script>
+</body>
+</html>

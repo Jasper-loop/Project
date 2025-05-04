@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Menu.css">
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/d4/25/36/d42536b5d37eb252bf584ae939037d67.jpg">
+    <title>Mister Donut</title>
+</head>
+<body>
+    <header class="header_index">
+        <h1 id="lin" onclick="myLink()">Mister<br>Donut</a></h1>
+        <nav class="main_nav">
+            <a href="Menu.html">Menu</a>
+            <a href="About.html">About</a>
+            <a href="How_It_WOrks.html">How It Works</a>
+            <a href="#Contact.html">Contact</a>
+            <a href="Order_Now.html">Order Now</a>
+        </nav>
+    </header>
+   <main>
+    <figure>
+        <img src="https://www.misterdonut.com.ph/uploads/20241119/1731997661_b38bf1635fc41c67587a.jpg" width="100%" height="300vh" style="margin-top:0px">
+    </figure>
+    <section id="beverages" class="beverage">
+        <div class="images">
+            <img onclick="beverage_image_1()" src="https://www.misterdonut.com.ph/uploads/20221110/1668072051_4a18e9c7cd8684224eb3.png"  width="200px"  alt="">
+            <img onclick="beverage_image_2()" src="https://www.misterdonut.com.ph/uploads/20221110/1668071658_ee17fcd02c8de47b1d10.png"  width="200px" alt="">
+            <img onclick="beverage_image_3()" src="https://www.misterdonut.com.ph/uploads/20221110/1668071722_25ca945e171f83061ec0.png"  width="200px" alt="">
+            <img onclick="beverage_image_4()" src="https://www.misterdonut.com.ph/uploads/20221110/1668071776_06099e253d66aff82bc4.png"  width="200px" alt="">
+        </div>
+        <div class="description">
+            <h1>Beverages</h1>
+            <p>Not only we satisfy one's sweet tooth and savory cravings, we also offer beverages that will surely quench your thirst!</p>
+            <h3 id="beverage_name"></h3>
+            <p id="beverage_price"></p>
+            <button type="button" id="beverage_but" onclick="buy()">Buy</button>
+        </div>
+    </section>
+
+    <section id="snack" class="Snack">
+        <div class="description">
+            <h1>Snackwitches</h1>
+            <p>Your classic savory favorites in a bun! Freshly made in our shops that you can enjoy on the spot or on-the-go!</p>
+            <h3 id="snack_name"></h3>
+            <p id="snack_price"></p>
+            <button type="button" id="snack_but" onclick="buy()">Buy</button>
+        </div>
+        <div class="images">
+            <img onclick="snack_image_1()" src="https://www.misterdonut.com.ph/uploads/20220110/1641774229_3773510c0e085a0b258a.png"  width="250px"  alt="">
+            <img onclick="snack_image_2()" src="https://www.misterdonut.com.ph/uploads/20220110/1641774300_0945accc683006655f94.png"  width="250px" alt="">
+            <img onclick="snack_image_3()" src="https://www.misterdonut.com.ph/uploads/20220110/1641774282_02ca18b29d777b423f1d.png"  width="250px" alt="">
+            <img onclick="snack_image_4()" src="https://www.misterdonut.com.ph/uploads/20220110/1641774259_e081236318acadb6a0e3.png"  width="250px" alt="">
+        </div>
+    </section>
+
+    <section id="rice" class="rice">
+        <div class="images">
+            <img onclick="rice_image_1()" src="https://www.misterdonut.com.ph/uploads/20220110/1641774532_20c5b201e3fe5cb8556f.png"  width="250px"  alt="">
+            <img onclick="rice_image_2()" src="https://www.misterdonut.com.ph/uploads/20220110/1641774551_984bc974c5b6e7a2952f.png"  width="250px" alt="">
+            <img onclick="rice_image_3()" src="https://www.misterdonut.com.ph/uploads/20220110/1641774513_104555a13103005cca8e.png"  width="250px" alt="">
+            <img onclick="rice_image_4()" src="https://www.misterdonut.com.ph/uploads/20220110/1641774581_28064efb35648c3c42d9.png"  width="250px" alt="">
+        </div>
+        <div class="description">
+            <h1>Rice Meals</h1>
+            <p>Our rice meals are prepared to be hearty and flavorsome to satisfy one's appetite. These particular dishes best explain how we cater to the delicious food preference of our beloved customers.</p>
+            <h3 id="rice_name"></h3>
+            <p id="rice_price"></p>
+            <button type="button" id="rice_but" onclick="buy()">Buy</button>
+        </div>
+    </section>
+
+    <section id="pasta" class="pasta">
+        <div class="description">
+            <h1>Pasta</h1>
+            <p>We offer our Pasta meals according to the 'Customers' Usuals' as we prioritize their satisfaction. These are prepared in store to ensure serving a hot and savory meals for everyone to dig in!</p>
+            <h3 id="pasta_name"></h3>
+            <p id="pasta_price"></p>
+            <button type="button" id="pasta_but" onclick="buy()">Buy</button>
+        </div>
+        <div class="images">
+            <img onclick="pasta_image_1()" src="https://www.misterdonut.com.ph/uploads/20220110/1641773625_6e27e2707e96023e0685.png"  width="250px"  alt="">
+            <img onclick="pasta_image_2()" src="https://www.misterdonut.com.ph/uploads/20220110/1641773774_94a063cf3cf47046333b.png"  width="250px" alt="">
+            <img onclick="pasta_image_3()" src="https://www.misterdonut.com.ph/uploads/20221110/1668070895_a8c6cba1ebe6d30eda99.png"  width="250px" alt="">
+            <img onclick="pasta_image_4()" src="https://www.misterdonut.com.ph/uploads/20220110/1641773796_37c0cb3885ec728216d5.png"  width="250px" alt="">
+        </div>
+    </section>
+
+    <section id="bake" class="bake">
+        <div class="images">
+            <img onclick="bake_image_1()" src="https://www.misterdonut.com.ph/uploads/20220110/1641775179_91a01a87d94d90af5c19.png"  width="200px"  alt="">
+            <img onclick="bake_image_2()" src="https://www.misterdonut.com.ph/uploads/20220110/1641775265_921b7d973eff243df162.png"  width="200px" alt="">
+            <img onclick="bake_image_8()" src="https://www.misterdonut.com.ph/uploads/20220110/1641775225_ec55784fc3b30a207104.png" width="200px;" alt="">
+            <img onclick="bake_image_4()" src="https://www.misterdonut.com.ph/uploads/20220110/1641775132_4b86c9665c5ad5f6fbe6.png"  width="200px" alt="">
+            <img onclick="bake_image_5()" src="https://www.misterdonut.com.ph/uploads/20220110/1641775167_ebcd6fbd841066f07d78.png" width="200px" alt="">
+            <img onclick="bake_image_6()" src="https://www.misterdonut.com.ph/uploads/20221110/1668069842_70ae7922e52e42a5317f.png" width="200px" alt="">
+            <img onclick="bake_image_7()" src="https://www.misterdonut.com.ph/uploads/20221110/1668070389_c49824e3eee95e28da2c.png" width="200px" alt="">
+            <img onclick="bake_image_3()" src="https://www.misterdonut.com.ph/uploads/20221110/1668070000_2648cde9992ff535116d.png"  width="200px" alt="">
+        </div>
+        <div class="description">
+            <h1>Baked Goods</h1>
+            <p>Our baked goods are kneeded with the softest dough and generously packed with scrumptious toppers or ingredients. We serve them fresh for a much enjoyable snack time!</p>
+            <h3 id="bake_name"></h3>
+            <p id="bake_price"></p>
+            <button type="button" id="bake_but" onclick="buy()">Buy</button>
+        </div>
+    </section>
+
+    <section id="donut" class="donut">
+        <div class="description">
+            <h1>Donuts</h1>
+            <p>Mister Donut offers a wide range of affordable yet, delectable Donuts from Classic, Premium, Specials, and to Kids' top favorites! Available in Mister Donut branches, and selected products are also accessible in the nearest 7-Eleven branch in your area. </p>
+            <h3 id="donut_name"></h3>
+            <p id="donut_price"></p>
+            <button type="button" id="donut_but" onclick="buy()">Buy</button>
+        </div>
+        <div class="images">
+            <img onclick="donut_image_1()" src="https://www.misterdonut.com.ph/uploads/20220107/1641533974_f9ed6a5eaa33799610ad.png"  width="200px" alt="">
+            <img onclick="donut_image_2()" src="https://www.misterdonut.com.ph/uploads/20221110/1668066867_ffe378871b34015cbde0.png"  width="200px" alt="">
+            <img onclick="donut_image_3()" src="https://www.misterdonut.com.ph/uploads/20240919/1726728237_b32707c296456764ce02.png" width="200px;" alt="">
+            <img onclick="donut_image_4()" src="https://www.misterdonut.com.ph/uploads/20221110/1668068173_832e27f6b50a3b8b7a20.png"  width="200px" alt="">
+            <img onclick="donut_image_5()" src="https://www.misterdonut.com.ph/uploads/20221110/1668068233_fd00eeb41998e2f6e0f9.png" width="200px" alt="">
+            <img onclick="donut_image_6()" src="https://www.misterdonut.com.ph/uploads/20240502/1714623108_80b4a0e79d8e871091f9.png" width="200px" alt="">
+            <img onclick="donut_image_7()" src="https://www.misterdonut.com.ph/uploads/20240502/1714622810_e3758de3609a2ad41d10.jpg" width="200px" alt="">
+            <img onclick="donut_image_8()" src="https://www.misterdonut.com.ph/uploads/20240919/1726736238_b5d1e361146634f15a80.png"  width="200px" alt="">
+            <img onclick="donut_image_9()" src="https://www.misterdonut.com.ph/uploads/20240919/1726736275_86ed65e252d9f945591a.png"  width="200px" alt="">
+            <img onclick="donut_image_10()" src="https://www.misterdonut.com.ph/uploads/20221110/1668068422_f554ff4c218dec7dc035.png"  width="200px" alt="">
+        </div>
+    </section>
+
+   </main>
+    <footer>
+        <div class="outerr">
+        <div class="mister">
+            <h2>Mister Donut</h2>
+            <a href="https://www.facebook.com/MisterDonutElSalvador" target="_blank"><i class="fa fa-facebook-f" style="font-size:30px; margin:0 20px;"></i></a>
+            <a href="https://x.com/misterdonut_ph?lang=en" target="_blank"><i class="fa fa-twitter" style="font-size:30px; margin:0 10px;"></i></a>
+            <a href="https://www.instagram.com/misterdonut_ph/?hl=en" target="_blank"><i class="fa fa-instagram" style="font-size:30px; margin:0 10px;"></i></a>
+        </div>
+        <div class="outer">  
+            <div class="About">
+                <div class="first">
+                <a href="About.html"><p>About</p></a>
+                <a href="Menu.html"><p>Menu</p></a>
+                <a href="#"><p>Opportunity</p></a>
+                </div>
+                <div class="second">
+                <a href="#"><p>Locations</p></a>
+                <a href="#"><p>News & Events</p></a>
+                <a href="#"><p>LMS</p></a>
+                </div>
+            </div>
+            <div class="Contact">
+                <p id="Contact.html"><i class="fa fa-phone" style="font-size:24px"></i> +639178896148</p>
+                <p><i class="fa fa-envelope" style="font-size:24px"></i> fms@misterdonut.ph</p>
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+            <p>2025 all rights reserved.</p>
+            <p>privacy policy</p>
+        </div>
+    </footer>
+    <script>
+        function myLink(){
+            window.location.href="Home.html"
+        }
+        function beverage_image_1(){
+            document.getElementById("beverage_name").innerHTML = "<h3>" + "Brewed Drip Cofee" + "</h3>"
+            document.getElementById("beverage_price").innerHTML = "<p>" + "Php 70.00" + "</p>";
+            document.getElementById("beverage_but").style.display="block"
+        }
+        function beverage_image_2(){
+            document.getElementById("beverage_name").innerHTML = "<h3>" + "Taro Milk Tea" + "</h3>"
+            document.getElementById("beverage_price").innerHTML = "<p>" + "Php 65.00" + "</p>";
+            document.getElementById("beverage_but").style.display="block"
+        }
+        function beverage_image_3(){
+            document.getElementById("beverage_name").innerHTML = "<h3>" + "Iced Choco(120z)" + "</h3>"
+            document.getElementById("beverage_price").innerHTML = "<p>" + "Php 85.00" + "</p>";
+            document.getElementById("beverage_but").style.display="block"
+        }
+        function beverage_image_4(){
+            document.getElementById("beverage_name").innerHTML = "<h3>" + "Iced Creamy Cofee" + "</h3>"
+            document.getElementById("beverage_price").innerHTML = "<p>" + "Php 55.00" + "</p>";
+            document.getElementById("beverage_but").style.display="block"
+        }
+        /*Snack*/
+        function snack_image_1(){
+            document.getElementById("snack_name").innerHTML = "<h3>" + "Chunky Chicken" + "</h3>"
+            document.getElementById("snack_price").innerHTML = "<p>" + "Php 50.00" + "</p>";
+            document.getElementById("snack_but").style.display="block"
+        }
+        function snack_image_2(){
+            document.getElementById("snack_name").innerHTML = "<h3>" + "Spicy Tuna" + "</h3>"
+            document.getElementById("snack_price").innerHTML = "<p>" + "Php 50.00" + "</p>";
+            document.getElementById("snack_but").style.display="block"
+        }
+        function snack_image_3(){
+            document.getElementById("snack_name").innerHTML = "<h3>" + "Ham & Bacon" + "</h3>"
+            document.getElementById("snack_price").innerHTML = "<p>" + "Php 80.00" + "</p>";
+            document.getElementById("snack_but").style.display="block"
+        }
+        function snack_image_4(){
+            document.getElementById("snack_name").innerHTML = "<h3>" + "Clubhouse Sandwich" + "</h3>"
+            document.getElementById("snack_price").innerHTML = "<p>" + "Php 80.00" + "</p>";
+            document.getElementById("snack_but").style.display="block"
+        }
+        /*rice*/
+        function rice_image_1(){
+            document.getElementById("rice_name").innerHTML = "<h3>" + "Beef Wagyu Tapa Rice" + "</h3>"
+            document.getElementById("rice_price").innerHTML = "<p>" + "Php 129.00" + "</p>";
+            document.getElementById("rice_but").style.display="block"
+        }
+        function rice_image_2(){
+            document.getElementById("rice_name").innerHTML = "<h3>" + "Chicken Tocino" + "</h3>"
+            document.getElementById("rice_price").innerHTML = "<p>" + "Php 99.00" + "</p>";
+            document.getElementById("rice_but").style.display="block"
+        }
+        function rice_image_3(){
+            document.getElementById("rice_name").innerHTML = "<h3>" + "Spicy Adobo w/Liver" + "</h3>"
+            document.getElementById("rice_price").innerHTML = "<p>" + "Php 99.00" + "</p>";
+            document.getElementById("rice_but").style.display="block"
+        }
+        function rice_image_4(){
+            document.getElementById("rice_name").innerHTML = "<h3>" + "Creamy Mushroom Chicken" + "</h3>"
+            document.getElementById("rice_price").innerHTML = "<p>" + "Php 99.00" + "</p>";
+            document.getElementById("rice_but").style.display="block"
+        }
+        /*pasta*/
+        function pasta_image_1(){
+            document.getElementById("pasta_name").innerHTML = "<h3>" + "Cheesy Baked Penne" + "</h3>"
+            document.getElementById("pasta_price").innerHTML = "<p>" + "Php 80.00" + "</p>";
+            document.getElementById("pasta_but").style.display="block"
+        }
+        function pasta_image_2(){
+            document.getElementById("pasta_name").innerHTML = "<h3>" + "Creamy Carbonara" + "</h3>"
+            document.getElementById("pasta_price").innerHTML = "<p>" + "Php 85.00" + "</p>";
+            document.getElementById("pasta_but").style.display="block"
+        }
+        function pasta_image_3(){
+            document.getElementById("pasta_name").innerHTML = "<h3>" + "Faborito Feast" + "</h3>"
+            document.getElementById("pasta_price").innerHTML = "<p>" + "Php 310.00" + "</p>";
+            document.getElementById("pasta_but").style.display="block"
+        }
+        function pasta_image_4(){
+            document.getElementById("pasta_name").innerHTML = "<h3>" + "Cheesy Meatti Spaghetti" + "</h3>"
+            document.getElementById("pasta_price").innerHTML = "<p>" + "Php 65.00" + "</p>";
+            document.getElementById("pasta_but").style.display="block"
+        }
+        /*baked gooods*/
+        function bake_image_1(){
+            document.getElementById("bake_name").innerHTML = "<h3>" + "Double Cheese Ensaymada" + "</h3>"
+            document.getElementById("bake_price").innerHTML = "<p>" + "Php 45.00" + "</p>";
+            document.getElementById("bake_but").style.display="block"
+        }
+        function bake_image_2(){
+            document.getElementById("bake_name").innerHTML = "<h3>" + "Ube Chese Ensaymada" + "</h3>"
+            document.getElementById("bake_price").innerHTML = "<p>" + "Php 48.00" + "</p>";
+            document.getElementById("bake_but").style.display="block"
+        }
+        function bake_image_3(){
+            document.getElementById("bake_name").innerHTML = "<h3>" + "Cheesy Ensaymada Bites" + "</h3>"
+            document.getElementById("bake_price").innerHTML = "<p>" + "Php 85.00" + "</p>";
+            document.getElementById("bake_but").style.display="block"
+        }
+        function bake_image_4(){
+            document.getElementById("bake_name").innerHTML = "<h3>" + "Brownies" + "</h3>"
+            document.getElementById("bake_price").innerHTML = "<p>" + "Php 25.00" + "</p>";
+            document.getElementById("bake_but").style.display="block"
+        }function bake_image_5(){
+            document.getElementById("bake_name").innerHTML = "<h3>" + "Cream Bread" + "</h3>"
+            document.getElementById("bake_price").innerHTML = "<p>" + "Php 65.00" + "</p>";
+            document.getElementById("bake_but").style.display="block"
+        }
+        function bake_image_6(){
+            document.getElementById("bake_name").innerHTML = "<h3>" + "Cofee Bun" + "</h3>"
+            document.getElementById("bake_price").innerHTML = "<p>" + "Php 50.00" + "</p>";
+            document.getElementById("bake_but").style.display="block"
+        }
+        function bake_image_7(){
+            document.getElementById("bake_name").innerHTML = "<h3>" + "Raisin Bread" + "</h3>"
+            document.getElementById("bake_price").innerHTML = "<p>" + "Php 75.00" + "</p>";
+            document.getElementById("bake_but").style.display="block"
+        }
+        function bake_image_8(){
+            document.getElementById("bake_name").innerHTML = "<h3>" + "Butter Toast" + "</h3>"
+            document.getElementById("bake_price").innerHTML = "<p>" + "Php 21.00" + "</p>";
+            document.getElementById("bake_but").style.display="block"
+        }
+        /*donut*/
+        function donut_image_1(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Classic Bavarian" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }
+        function donut_image_2(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Choco Bavarian" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }
+        function donut_image_3(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Strawberry Bavarian" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }
+        function donut_image_4(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Classic + Choco Bavarian" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }function donut_image_5(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Classic + Swiss Mocha" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }
+        function donut_image_6(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Coockies and Cream" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }
+        function donut_image_7(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Rocky Road" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }
+        function donut_image_8(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Salted toffee Caramel" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }
+        function donut_image_9(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Belgian Choco Chip" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }
+        function donut_image_10(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Choco Bavarian Triple Chovo Donut" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }
+    </script>
+</body>
+</html>
