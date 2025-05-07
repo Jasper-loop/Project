@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Menu.css">
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/d4/25/36/d42536b5d37eb252bf584ae939037d67.jpg">
+    <title>Mister Donut</title>
+</head>
+<body>
+    <header class="header_index">
+        <h1 id="lin" onclick="myLink()">Mister<br>Donut</a></h1>
+        <nav class="main_nav">
+            <a href="Menu.html">Menu</a>
+            <a href="About.html">About</a>
+            <a href="#Contact.html">Contact</a>
+            <div class="socials">
+                <a href="https://www.facebook.com/MisterDonutElSalvador" target="_blank"><i class="fa fa-facebook-f" style="font-size:30px; margin:0 20px;"></i></a>
+                <a href="https://x.com/misterdonut_ph?lang=en" target="_blank"><i class="fa fa-twitter" style="font-size:30px; margin:0 10px;"></i></a>
+                <a href="https://www.instagram.com/misterdonut_ph/?hl=en" target="_blank"><i class="fa fa-instagram" style="font-size:30px; margin:0 10px;"></i></a>
+            </div>
+        </nav>
+    </header>
+   <main>
+    <figure>
+        <img src="header_image.jpg" width="100%" height="300vh" style="margin-top:0px">
+    </figure>
+    <h1 class="popular_dishes" style="text-transform: uppercase; font-size: 30px; font-weight: 800; padding:50px; background-color: rgb(243, 242, 242); width:50%; margin:20px auto; border-radius: 50%; color:orange">Our Popular Dishes</h1>
+    <section id="beverages" class="beverage">
+        <div class="images">
+            <img id="brewed" onclick="beverage_image_1()" src="brewed.png"  width="200px"  alt="">
+            <img id="taro" onclick="beverage_image_2()" src="taro.png"  width="200px" alt="">
+            <img id="iced_choco" onclick="beverage_image_3()" src="iced_choco.png"  width="200px" alt="">
+            <img id="iced_creamy" onclick="beverage_image_4()" src="iced_creamy.png"  width="200px" alt="">
+        </div>
+        <div class="description">
+            <h1>Beverages</h1>
+            <p>Not only we satisfy one's sweet tooth and savory cravings, we also offer beverages that will surely quench your thirst!</p>
+            <h3 id="beverage_name"></h3>
+            <p id="beverage_price"></p>
+            <button type="button" id="beverage_but" onclick="beverages_buy()">Buy</button>
+            <div id="beverages_container">
+                <h1 id="name"></h1>
+                <form id="form">
+                <label for="buyer_name">Name: </label>
+                <br>
+                <input type="text" id="buyer_name" placeholder="Type your name">
+                <br>
+                <label for="phone_number">Phone number: </label>
+                <br>
+                <input type="tel" id="phone_number" placeholder="Type your phone number">
+                <br>
+                <label for="quantity">Quantity:</label>
+                <br>
+                <input type="number" id="quantity">
+                <br>
+                <label for="size">Size:</label>
+                <br>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <br>
+                <input type="submit" onclick="order()" value="Order" style="font-size:20px; font-weight: 800; cursor: pointer;">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="snack" class="Snack">
+        <div class="description">
+            <h1>Snackwitches</h1>
+            <p>Your classic savory favorites in a bun! Freshly made in our shops that you can enjoy on the spot or on-the-go!</p>
+            <h3 id="snack_name"></h3>
+            <p id="snack_price"></p>
+            <button type="button" id="snack_but" onclick="snack_buy()">Buy</button>
+            <div id="snack_container">
+                <h1 id="name"></h1>
+                <form id="form">
+                <label for="quantity">Quantity:</label>
+                <br>
+                <input type="number" id="quantity">
+                <br>
+                <input type="submit" onclick="snack_order()" value="Order" style="font-size:20px; font-weight: 800; cursor: pointer;">
+                </form>
+            </div>
+        </div>
+        <div class="images">
+            <img id="chicken" onclick="snack_image_1()" src="chunky_chicken.png"  width="250px"  alt="">
+            <img id="tuna" onclick="snack_image_2()" src="spicy_tuna.png"  width="250px" alt="">
+            <img id="ham" onclick="snack_image_3()" src="ham.png"  width="250px" alt="">
+            <img id="clubhouse" onclick="snack_image_4()" src="clubhouse.png"  width="250px" alt="">
+        </div>
+    </section>
+
+    <section id="rice" class="rice">
+        <div class="images">
+            <img onclick="rice_image_1()" src="beef.png"  width="250px"  alt="">
+            <img onclick="rice_image_2()" src="tocino.png"  width="250px" alt="">
+            <img onclick="rice_image_3()" src="spicy_adobo.png"  width="250px" alt="">
+        </div>
+        <div class="description">
+            <h1>Rice Meals</h1>
+            <p>Our rice meals are prepared to be hearty and flavorsome to satisfy one's appetite. These particular dishes best explain how we cater to the delicious food preference of our beloved customers.</p>
+            <h3 id="rice_name"></h3>
+            <p id="rice_price"></p>
+            <button type="button" id="rice_but" onclick="buy()">Buy</button>
+        </div>
+    </section>
+
+    <section id="pasta" class="pasta">
+        <div class="description">
+            <h1>Pasta</h1>
+            <p>We offer our Pasta meals according to the 'Customers' Usuals' as we prioritize their satisfaction. These are prepared in store to ensure serving a hot and savory meals for everyone to dig in!</p>
+            <h3 id="pasta_name"></h3>
+            <p id="pasta_price"></p>
+            <button type="button" id="pasta_but" onclick="buy()">Buy</button>
+        </div>
+        <div class="images">
+            <img onclick="pasta_image_1()" src="cheesy_baked.png"  width="250px"  alt="">
+            <img onclick="pasta_image_2()" src="carbonara.png"  width="250px" alt="">
+            <img onclick="pasta_image_3()" src="faborito_feast.png"  width="250px" alt="">
+            <img onclick="pasta_image_4()" src="cheesy_meatti.png"  width="250px" alt="">
+        </div>
+    </section>
+
+    <section id="bake" class="bake">
+        <div class="images">
+            <img onclick="bake_image_1()" src="Double_cheese_enaymada.png"  width="200px"  alt="">
+            <img onclick="bake_image_2()" src="ube_cheese_ensaymada.png"  width="200px" alt="">
+            <img onclick="bake_image_8()" src="butter_toast.png" width="200px;" alt="">
+            <img onclick="bake_image_4()" src="browies.png"  width="200px" alt="">
+            <img onclick="bake_image_5()" src="cream_bread.png" width="200px" alt="">
+            <img onclick="bake_image_6()" src="coffee_bun.png" width="200px" alt="">
+            <img onclick="bake_image_7()" src="raisin_bread.png" width="200px" alt="">
+            <img onclick="bake_image_3()" src="cheesy_ensaymada_bites.png"  width="200px" alt="">
+        </div>
+        <div class="description">
+            <h1>Baked Goods</h1>
+            <p>Our baked goods are kneeded with the softest dough and generously packed with scrumptious toppers or ingredients. We serve them fresh for a much enjoyable snack time!</p>
+            <h3 id="bake_name"></h3>
+            <p id="bake_price"></p>
+            <button type="button" id="bake_but" onclick="buy()">Buy</button>
+        </div>
+    </section>
+
+    <section id="donut" class="donut">
+        <div class="description">
+            <h1>Donuts</h1>
+            <p>Mister Donut offers a wide range of affordable yet, delectable Donuts from Classic, Premium, Specials, and to Kids' top favorites! Available in Mister Donut branches, and selected products are also accessible in the nearest 7-Eleven branch in your area. </p>
+            <h3 id="donut_name"></h3>
+            <p id="donut_price"></p>
+            <button type="button" id="donut_but" onclick="buy()">Buy</button>
+        </div>
+        <div class="images">
+            <img onclick="donut_image_1()" src="classic_bavarian.png"  width="200px" alt="">
+            <img onclick="donut_image_2()" src="choco_bavarian.png"  width="200px" alt="">
+            <img onclick="donut_image_3()" src="strawberry_bavarian.png" width="200px;" alt="">
+            <img onclick="donut_image_4()" src="classic_plus_choco.png"  width="200px" alt="">
+            <img onclick="donut_image_5()" src="classic_plus_swiss.png" width="200px" alt="">
+            <img onclick="donut_image_6()" src="coockies_and_cream.png" width="200px" alt="">
+            <img onclick="donut_image_8()" src="salted_toffee.png"  width="200px" alt="">
+            <img onclick="donut_image_9()" src="belgian_choco_chip.png"  width="200px" alt="">
+        </div>
+    </section>
+
+   </main>
+    <footer>
+        <div class="outerr">
+        <div class="mister">
+            <h2>Mister Donut</h2>
+            <a href="https://www.facebook.com/MisterDonutElSalvador" target="_blank"><i class="fa fa-facebook-f" style="font-size:30px; margin:0 20px;"></i></a>
+            <a href="https://x.com/misterdonut_ph?lang=en" target="_blank"><i class="fa fa-twitter" style="font-size:30px; margin:0 10px;"></i></a>
+            <a href="https://www.instagram.com/misterdonut_ph/?hl=en" target="_blank"><i class="fa fa-instagram" style="font-size:30px; margin:0 10px;"></i></a>
+        </div>
+        <div class="outer">  
+            <div class="About">
+                <div class="first">
+                <a href="About.html"><p>About</p></a>
+                <a href="Menu.html"><p>Menu</p></a>
+                <a href="opportunity.html"><p>Opportunity</p></a>
+                </div>
+                <div class="second">
+                <a href="#"><p>Locations</p></a>
+                <a href="#"><p>News & Events</p></a>
+                <a href="#"><p>LMS</p></a>
+                </div>
+            </div>
+            <div class="Contact">
+                <p id="Contact.html"><i class="fa fa-phone" style="font-size:24px"></i> +639178896148</p>
+                <p><i class="fa fa-envelope" style="font-size:24px"></i> fms@misterdonut.ph</p>
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+            <p>2025 all rights reserved.</p>
+            <p>privacy policy</p>
+        </div>
+    </footer>
+    <script>
+        function myLink(){
+            window.location.href="Home.html"
+        }
+        function beverage_image_1(){
+            document.getElementById("beverage_name").innerHTML = "<h3>" + "Brewed Drip Cofee" + "</h3>"
+            document.getElementById("beverage_price").innerHTML = "<p>" + "<br>" + "Small - Php 25.00" + "<br>" + "Medium - Php 50.00" + "<br>" +  "Large - Php 70.00" + "</p>";
+            document.getElementById("beverage_but").style.display="block"
+        }
+        function beverage_image_2(){
+            document.getElementById("beverage_name").innerHTML = "<h3>" + "Taro Milk Tea" + "</h3>"
+            document.getElementById("beverage_price").innerHTML = "<p>" + "<br>" + "Small - Php 20.00" + "<br>" + "Medium - Php 45.00" + "<br>" + " Large - Php 65.00" + "</p>";
+            document.getElementById("beverage_but").style.display="block"
+        }
+        function beverage_image_3(){
+            document.getElementById("beverage_name").innerHTML = "<h3>" + "Iced Choco" + "</h3>"
+            document.getElementById("beverage_price").innerHTML = "<p>" + "<br>" + "Small - Php 30.00" + "<br>" + "Medium - Php 60.00" + "<br>" + "Large - Php 85.00" + "</p>";
+            document.getElementById("beverage_but").style.display="block"
+        }
+        function beverage_image_4(){
+            document.getElementById("beverage_name").innerHTML = "<h3>" + "Iced Creamy Cofee" + "</h3>"
+            document.getElementById("beverage_price").innerHTML = "<p>" + "<br>" + "Small - Php 20.00" + "<br>" + "Medium - Php 30.00" + "<br>" + "Large - Php 55.00" + "</p>";
+            document.getElementById("beverage_but").style.display="block"
+        }
+        /*Snack*/
+        function snack_image_1(){
+            document.getElementById("snack_name").innerHTML = "<h3>" + "Chunky Chicken" + "</h3>"
+            document.getElementById("snack_price").innerHTML = "<p>" + "Php 50.00" + "</p>";
+            document.getElementById("snack_but").style.display="block"
+        }
+        function snack_image_2(){
+            document.getElementById("snack_name").innerHTML = "<h3>" + "Spicy Tuna" + "</h3>"
+            document.getElementById("snack_price").innerHTML = "<p>" + "Php 50.00" + "</p>";
+            document.getElementById("snack_but").style.display="block"
+        }
+        function snack_image_3(){
+            document.getElementById("snack_name").innerHTML = "<h3>" + "Ham & Bacon" + "</h3>"
+            document.getElementById("snack_price").innerHTML = "<p>" + "Php 80.00" + "</p>";
+            document.getElementById("snack_but").style.display="block"
+        }
+        function snack_image_4(){
+            document.getElementById("snack_name").innerHTML = "<h3>" + "Clubhouse Sandwich" + "</h3>"
+            document.getElementById("snack_price").innerHTML = "<p>" + "Php 80.00" + "</p>";
+            document.getElementById("snack_but").style.display="block"
+        }
+        /*rice*/
+        function rice_image_1(){
+            document.getElementById("rice_name").innerHTML = "<h3>" + "Beef Wagyu Tapa Rice" + "</h3>"
+            document.getElementById("rice_price").innerHTML = "<p>" + "Php 129.00" + "</p>";
+            document.getElementById("rice_but").style.display="block"
+        }
+        function rice_image_2(){
+            document.getElementById("rice_name").innerHTML = "<h3>" + "Chicken Tocino" + "</h3>"
+            document.getElementById("rice_price").innerHTML = "<p>" + "Php 99.00" + "</p>";
+            document.getElementById("rice_but").style.display="block"
+        }
+        function rice_image_3(){
+            document.getElementById("rice_name").innerHTML = "<h3>" + "Spicy Adobo w/Liver" + "</h3>"
+            document.getElementById("rice_price").innerHTML = "<p>" + "Php 99.00" + "</p>";
+            document.getElementById("rice_but").style.display="block"
+        }
+        function rice_image_4(){
+            document.getElementById("rice_name").innerHTML = "<h3>" + "Creamy Mushroom Chicken" + "</h3>"
+            document.getElementById("rice_price").innerHTML = "<p>" + "Php 99.00" + "</p>";
+            document.getElementById("rice_but").style.display="block"
+        }
+        /*pasta*/
+        function pasta_image_1(){
+            document.getElementById("pasta_name").innerHTML = "<h3>" + "Cheesy Baked Penne" + "</h3>"
+            document.getElementById("pasta_price").innerHTML = "<p>" + "Php 80.00" + "</p>";
+            document.getElementById("pasta_but").style.display="block"
+        }
+        function pasta_image_2(){
+            document.getElementById("pasta_name").innerHTML = "<h3>" + "Creamy Carbonara" + "</h3>"
+            document.getElementById("pasta_price").innerHTML = "<p>" + "Php 85.00" + "</p>";
+            document.getElementById("pasta_but").style.display="block"
+        }
+        function pasta_image_3(){
+            document.getElementById("pasta_name").innerHTML = "<h3>" + "Faborito Feast" + "</h3>"
+            document.getElementById("pasta_price").innerHTML = "<p>" + "Php 310.00" + "</p>";
+            document.getElementById("pasta_but").style.display="block"
+        }
+        function pasta_image_4(){
+            document.getElementById("pasta_name").innerHTML = "<h3>" + "Cheesy Meatti Spaghetti" + "</h3>"
+            document.getElementById("pasta_price").innerHTML = "<p>" + "Php 65.00" + "</p>";
+            document.getElementById("pasta_but").style.display="block"
+        }
+        /*baked gooods*/
+        function bake_image_1(){
+            document.getElementById("bake_name").innerHTML = "<h3>" + "Double Cheese Ensaymada" + "</h3>"
+            document.getElementById("bake_price").innerHTML = "<p>" + "Php 45.00" + "</p>";
+            document.getElementById("bake_but").style.display="block"
+        }
+        function bake_image_2(){
+            document.getElementById("bake_name").innerHTML = "<h3>" + "Ube Chese Ensaymada" + "</h3>"
+            document.getElementById("bake_price").innerHTML = "<p>" + "Php 48.00" + "</p>";
+            document.getElementById("bake_but").style.display="block"
+        }
+        function bake_image_3(){
+            document.getElementById("bake_name").innerHTML = "<h3>" + "Cheesy Ensaymada Bites" + "</h3>"
+            document.getElementById("bake_price").innerHTML = "<p>" + "Php 85.00" + "</p>";
+            document.getElementById("bake_but").style.display="block"
+        }
+        function bake_image_4(){
+            document.getElementById("bake_name").innerHTML = "<h3>" + "Brownies" + "</h3>"
+            document.getElementById("bake_price").innerHTML = "<p>" + "Php 25.00" + "</p>";
+            document.getElementById("bake_but").style.display="block"
+        }function bake_image_5(){
+            document.getElementById("bake_name").innerHTML = "<h3>" + "Cream Bread" + "</h3>"
+            document.getElementById("bake_price").innerHTML = "<p>" + "Php 65.00" + "</p>";
+            document.getElementById("bake_but").style.display="block"
+        }
+        function bake_image_6(){
+            document.getElementById("bake_name").innerHTML = "<h3>" + "Cofee Bun" + "</h3>"
+            document.getElementById("bake_price").innerHTML = "<p>" + "Php 50.00" + "</p>";
+            document.getElementById("bake_but").style.display="block"
+        }
+        function bake_image_7(){
+            document.getElementById("bake_name").innerHTML = "<h3>" + "Raisin Bread" + "</h3>"
+            document.getElementById("bake_price").innerHTML = "<p>" + "Php 75.00" + "</p>";
+            document.getElementById("bake_but").style.display="block"
+        }
+        function bake_image_8(){
+            document.getElementById("bake_name").innerHTML = "<h3>" + "Butter Toast" + "</h3>"
+            document.getElementById("bake_price").innerHTML = "<p>" + "Php 21.00" + "</p>";
+            document.getElementById("bake_but").style.display="block"
+        }
+        /*donut*/
+        function donut_image_1(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Classic Bavarian" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }
+        function donut_image_2(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Choco Bavarian" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }
+        function donut_image_3(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Strawberry Bavarian" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }
+        function donut_image_4(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Classic + Choco Bavarian" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }function donut_image_5(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Classic + Swiss Mocha" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }
+        function donut_image_6(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Coockies and Cream" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }
+        function donut_image_7(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Rocky Road" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }
+        function donut_image_8(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Salted toffee Caramel" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }
+        function donut_image_9(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Belgian Choco Chip" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }
+        function donut_image_10(){
+            document.getElementById("donut_name").innerHTML = "<h3>" + "Choco Bavarian Triple Chovo Donut" + "</h3>"
+            document.getElementById("donut_price").innerHTML = "<p>" + "Php 30.00" + "</p>";
+            document.getElementById("donut_but").style.display="block"
+        }
+        /*buying a beverages*/
+        function beverages_buy(){
+            document.getElementById("beverages_container").style.display="block";
+            let brewed = document.getElementById("brewed");
+            let iced_choco = document.getElementById("iced_choco");
+            let taro = document.getElementById("taro");
+            let iced_creamy = document.getElementById("iced_creamy");
+            if(brewed){
+                document.getElementById("beverages_container").style.display="block";
+                document.getElementById("name").innerHTML = "<h1>" + "Brewed Drip Coffee"+ "</h1>";                
+            }
+            if(taro){
+                document.getElementById("beverages_container").style.display="block";
+                document.getElementById("name").innerHTML = "<h1>" + "Taro Milk Tea"+ "</h1>"   
+            }
+            if(iced_creamy){
+                document.getElementById("beverages_container").style.display="block";
+                document.getElementById("name").innerHTML = "<h1>" + "Iced Creamy Coffee"+ "</h1>"   
+            }
+            if(iced_choco){
+                document.getElementById("beverages_container").style.display="block";
+                document.getElementById("name").innerHTML = "<h1>" + "Iced Choco"+ "</h1>"   
+            }
+        }
+        function order(){
+            let quantity = document.getElementById("quantity").value;
+            let size = document.getElementById("size").value;
+            if(size == "small"){
+            alert("Brewed Drip Coffee" + "\n\n" + "Quantity: "+ quantity + "\n" + "Size: " + size + "\n" + "Price: " + (quantity*25) + ".00");
+            }else if(size == "medium"){
+            alert("Brewed Drip Coffee" + "\n\n" + "Quantity: "+ quantity + "\n" + "Size: " + size + "\n" + "Price: " + (quantity*50) + ".00");   
+            }else if(size == "large"){
+            alert("Brewed Drip Coffee" + "\n\n" + "Quantity: "+ quantity + "\n" + "Size: " + size + "\n" + "Price: " + (quantity*70) + ".00");
+            }
+        }
+        /* buying snacks*/
+        function snack_buy(){
+            document.getElementById("snack_container").style.display="block";
+            let chicken = document.getElementById("chicken");
+            let tuna = document.getElementById("tuna");
+            let ham = document.getElementById("ham");
+            let clubhouse = document.getElementById("clubhouse");
+            if(chicken){
+                document.getElementById("snack_container").style.display="block";
+                document.getElementById("name").innerHTML = "<h1>" + "Chunky Chicken"+ "</h1>";                
+            }
+            if(tuna){
+                document.getElementById("snack_container").style.display="block";
+                document.getElementById("name").innerHTML = "<h1>" + "Spicy Tuna"+ "</h1>";   
+            }
+            if(ham){
+                document.getElementById("snack_container").style.display="block";
+                document.getElementById("name").innerHTML = "<h1>" + "Ham & Bacon"+ "</h1>";   
+            }
+            if(clubhouse){
+                document.getElementById("snack_container").style.display="block";
+                document.getElementById("name").innerHTML = "<h1>" + "Clubhouse Sandwitch"+ "</h1>";   
+            }
+        }
+    </script>
+</body>
+</html>

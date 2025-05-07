@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/d4/25/36/d42536b5d37eb252bf584ae939037d67.jpg">
+    <title>Mister Donut</title>
+</head>
+<body>
+    <header class="header_login">
+        <h1 id="lin" onclick="myLink()">Mister<br>Donut</a></h1>
+        <nav class="main_nav">
+            <a href="Menu.html">Menu</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="section_login">
+            <figure>
+                <img src="https://www.misterdonut.com.ph/uploads/20241119/1731997661_b38bf1635fc41c67587a.jpg" width="100%" height="700vh" style="margin-top:80px">
+            </figure>
+                <div class="blur"></div>
+                <div class="create_account"> 
+                    <h2>New Customer</h2>
+                    <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more</p>
+                    <h1 id="name">Mister<br>Donut</h1>
+                    <button type="button" onclick="create()">Create an account</button>                   
+                </div>
+                <div class="register">
+                    <h2>Retrived Password</h2>
+                    <p class="p" onclick="back()">Back to Login</p>
+                    <form>
+                    <label class="label" for="Email">Please enter your registered email address.</label>
+                    <br>
+                    <input type="email" id="Email" name="Email" required placeholder="Type email adress here">
+                    <br>
+                    <button id="button" type="button" onclick="">Submit</button>
+                    </form>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="outerr">
+        <div class="mister">
+            <h2>Mister Donut</h2>
+            <a href="https://www.facebook.com/MisterDonutElSalvador" target="_blank"><i class="fa fa-facebook-f" style="font-size:30px; margin:0 20px;"></i></a>
+            <a href="https://x.com/misterdonut_ph?lang=en" target="_blank"><i class="fa fa-twitter" style="font-size:30px; margin:0 10px;"></i></a>
+            <a href="https://www.instagram.com/misterdonut_ph/?hl=en" target="_blank"><i class="fa fa-instagram" style="font-size:30px; margin:0 10px;"></i></a>
+        </div>
+        <div class="outer">  
+            <div class="About">
+                <div class="first">
+                <a href="#"><p>About</p></a>
+                <a href="#"><p>Menu</p></a>
+                <a href="#"><p>Opportunity</p></a>
+                </div>
+                <div class="second">
+                <a href="#"><p>Locations</p></a>
+                <a href="#"><p>News & Events</p></a>
+                <a href="#"><p>LMS</p></a>
+                </div>
+            </div>
+            <div class="Contact">
+                <p><i class="fa fa-phone" style="font-size:24px"></i> +639178896148</p>
+                <p><i class="fa fa-envelope" style="font-size:24px"></i> fms@misterdonut.ph</p>
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+            <p>2025 all rights reserved.</p>
+            <p>privacy policy</p>
+        </div>
+    </footer>
+    <script>
+       function back(){
+        window.location.href="login.html";
+       }
+       function create(){
+        window.location.href="Create_account.html"
+       }
+    </script>
+</body>
+</html>

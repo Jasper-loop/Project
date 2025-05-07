@@ -1,0 +1,275 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-align:center;
+}
+header{
+    background:orange;
+    display: flex;
+    justify-content: space-evenly;
+    height: 80px;
+    flex-wrap: wrap;
+    width:100%;
+    padding:10px 0 0 0;  
+}
+header a{
+    color:rgb(43, 42, 42);
+    text-decoration: none;
+    font-family:apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight:700;
+    height:27px;
+    transition: all 0.3s ease-out;
+}
+header a:hover{
+    color:yellow;
+}
+nav{
+    width: 40%;
+    display:flex;
+    justify-content: space-around;
+    padding-top:20px;
+}
+header h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 33px;
+    font-size:40px;
+    cursor:pointer;
+}
+header h1:hover{
+    color:yellow;
+    text-shadow:rgb(38, 38, 38) 8.95px 8.95px 10.6px;
+}
+section{
+    border-radius:20px;
+    background-color: rgb(243, 242, 242);
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 5px 12px ;
+}
+.images{
+    width:40%;
+}
+.images img{
+    cursor:pointer;
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius:20px;
+    margin:10px;
+}
+.beverage{
+    display:flex;
+    justify-content: space-around;
+    margin:20px;
+    padding:20px;
+    position:relative;
+}
+.description{
+    width:40%;
+    text-align: left;
+    padding:20px;
+}
+.description h1{
+    color:orange;
+    margin-bottom:20px;
+    font-family:apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size:30px;
+}
+.description p{
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color:rgb(108, 108, 108);
+    margin-bottom:30px;
+}
+.description h3{
+    margin-bottom:10px;
+    font-family:apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#price{
+    font-weight:bold;
+}
+.description button{
+    width:20%;
+    padding:15px;
+    border-radius:20px;
+    display:none;
+    font-weight:800;
+    font-size:16px;
+    transition:all 0.3s ease-in-out;
+    border:none;
+    background-color: rgb(132, 132, 132);
+}
+button:hover{
+    color:yellow;
+    background-color: orange;
+}
+.Snack{
+    display:flex;
+    justify-content: space-around;
+    margin:20px;
+    padding:20px;
+}
+.rice{
+    display:flex;
+    justify-content: space-around;
+    margin:20px;
+    padding:20px;
+}
+.pasta{
+    display:flex;
+    justify-content: space-around;
+    margin:20px;
+    padding:20px; 
+}
+.bake{
+    display:flex;
+    margin:20px;
+    padding:20px; 
+}
+.bake .description{
+    width: 35%;
+}
+.bake .images{
+    width:60%;
+    flex-wrap: wrap;
+    padding:20px 20px 20px 0;
+}
+.donut{
+    display:flex;
+    justify-content: space-around;
+    margin:20px;
+    padding:20px;
+}
+#beverages_container{
+    border-radius:20px;
+    background-color: grey;
+    height: 110%;
+    width:30%;
+    position:absolute;
+    left:35%;
+    right:20%;
+    top:1%;
+    bottom:25%;
+    display:none;
+    padding:20px;
+    text-align: center;
+}
+#beverages_container h1{
+    text-align:center;
+}
+#beverages_container input, select{
+    padding:15px;
+    margin:10px;
+    border-radius:20px;
+    border:none;
+    width:70%;
+}
+#snack_container{
+    border-radius:20px;
+    background-color: grey;
+    height: 60%;
+    width:30%;
+    position:absolute;
+    left:35%;
+    right:20%;
+    top:95%;
+    bottom:0%;
+    padding:20px;
+    text-align: center;
+    display:none;
+}
+#snack_container h1{
+    text-align: center;
+    display:block;
+}
+#snack_container input{
+    padding:15px;
+    margin:10px;
+    border-radius:20px;
+    border:none;
+    width:70%;
+}
+
+
+
+.outerr{
+    background-color: orange;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin-top:100px;
+}
+.outer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20%;
+}
+.Contact{
+    padding:20px;
+    font-weight:bold;
+    width:20em;
+}
+.first{
+    padding:20px;
+    line-height: 1.5em;
+    font-weight:bold;
+}
+.second{
+    padding:20px;
+    line-height: 1.5em;
+    font-weight:bold;
+}
+.mister h2{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 33px;
+    padding:13px;
+    margin-bottom:5px;
+    font-size:40px;
+    color:yellow;
+    text-shadow:rgb(38, 38, 38) 8.95px 8.95px 10.6px;
+}
+.mister a{
+    color:black;
+    transition:all 0.3s ease-in-out;
+}
+.mister a:hover{
+    color:yellow;
+}
+.mister a:hover + a:visited {
+    color:black;
+}
+.About{
+    display:flex;
+    gap:10%;
+}
+.About p{
+    text-align:left;
+}
+.About > .first a{
+    color:black;
+    text-decoration:none;
+}
+.About .first a:hover{
+    color:yellow;
+}
+.About > .second a{
+    color:black;
+    text-decoration:none;
+}
+.About > .second a:hover{
+    color:yellow
+}
+.footer{
+    background-color: yellow;
+    display: flex;
+    justify-content:center;
+    gap:50%;
+    padding:10px;  
+}
+.footer p{
+    color: black;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-style:italic;
+    font-size:12px;
+}
